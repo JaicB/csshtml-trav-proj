@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Media Queries</title>
   <style>
     body {
@@ -19,7 +20,7 @@
     }
 
     /* Smartphones */
-    @media only screen and (max-width: 500px) {
+    @media(max-width: 500px) {
       body {
         background: red;
       }
@@ -71,16 +72,27 @@
       #landscape h1 {
         display: block;
       }
-      
     }
   </style>
-  <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css"> -->
+  <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css"> -->
 </head>
+
 <body>
-  <div id="widescreen"><h1>Widescreen</h1></div>
-  <div id="normal"><h1>Normal</h1></div>
-  <div id="tablet"><h1>Tablet</h1></div>
-  <div id="smartphone"><h1>Smartphone</h1></div>
-  <div id="landscape"><h1>Landscape</h1></div>
+  <div id="widescreen">
+    <h1>Widescreen</h1>
+  </div>
+  <div id="normal">
+    <h1>Normal</h1>
+  </div>
+  <div id="tablet">
+    <h1>Tablet</h1>
+  </div>
+  <div id="smartphone">
+    <h1>Smartphone</h1>
+  </div>
+  <div id="landscape">
+    <h1>Landscape</h1>
+  </div>
 </body>
+
 </html>
