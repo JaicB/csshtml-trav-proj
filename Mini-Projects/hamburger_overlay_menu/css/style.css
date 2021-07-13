@@ -1,8 +1,8 @@
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --secondary-color: rgba(229, 148, 0 , 0.9);
-  --overlay-color: rgba(24, 39, 51 , 0.85);
-  --menu-speed: 0.75s;
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 075s;
 }
 
 * {
@@ -63,7 +63,7 @@ body {
   border: none;
   background: var(--primary-color);
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: .75rem 1.5rem;
   margin-top: 1rem;
   transition: opacity 1s ease-in-out;
   text-decoration: none;
