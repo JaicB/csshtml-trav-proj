@@ -2,7 +2,7 @@
 @import "utilities";
 @import "item_grid";
 
-//General Styles
+// General Styles
 * {
   margin: 0;
   padding: 0;
@@ -75,8 +75,8 @@ img {
 
 // Header
 #header {
+  // Header Home
   &-home {
-    // Header Home
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
@@ -159,6 +159,7 @@ img {
       grid-gap: 1.5rem;
       text-align: center;
 
+      // process-step
       &-step {
         position: absolute;
         top: 0;
@@ -174,7 +175,7 @@ img {
         transition: all 1s;
       }
 
-      // Process-Icon
+      // process-icon
       &-icon {
         border-radius: 50%;
         background: $dark-color;
@@ -203,7 +204,7 @@ img {
   }
 }
 
-// About Section
+// About Sections
 #about {
   // About A
   &-a {
@@ -215,7 +216,7 @@ img {
       grid-gap: 1.2rem;
     }
 
-    // Grid Areas
+    // Grid Area
     .bio-image {
       grid-area: bioimage;
     }
@@ -245,7 +246,6 @@ img {
       margin: 1rem;
     }
   }
-
   // About B
   &-b {
     .progress {
@@ -259,11 +259,10 @@ img {
         height: 100%;
         color: #fff;
         text-align: center;
-        background-color: $main-color;
+        background: $main-color;
       }
     }
   }
-
   // About C
   &-c {
     .about-logos {
@@ -276,7 +275,6 @@ img {
       }
     }
   }
-
   // About D
   &-d {
     .testimonials {
@@ -303,6 +301,62 @@ img {
         border-radius: 50%;
         margin-right: 0.5rem;
       }
+    }
+  }
+}
+
+// Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
     }
   }
 }
@@ -335,3 +389,4 @@ img {
     }
   }
 }
+
